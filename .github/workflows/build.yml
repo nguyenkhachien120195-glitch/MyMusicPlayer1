@@ -914,7 +914,7 @@ jobs:
                   return String.format("%02d:%02d", minutes, seconds)
               }
 
-              override onDestroy() {
+              override fun onDestroy() {
                   super.onDestroy()
                   handler.removeCallbacks(updateSeekBarRunnable)
                   if (isBound) {
